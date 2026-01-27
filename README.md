@@ -2,7 +2,7 @@
 
 A full-stack inventory and asset management system built with .NET 10 and Angular. This application provides a simple and efficient way to manage inventory items, track stock levels, and monitor stock transactions.
 
-## ?? Features
+## 🚀 Features
 
 - **Inventory Management**
   - View all inventory items in a sortable list
@@ -25,7 +25,7 @@ A full-stack inventory and asset management system built with .NET 10 and Angula
   - Timestamped transactions with notes
   - Type-based filtering (In/Out)
 
-## ??? Technology Stack
+## 🛠️ Technology Stack
 
 ### Backend
 - **.NET 10** - Modern web API framework
@@ -40,7 +40,7 @@ A full-stack inventory and asset management system built with .NET 10 and Angula
 - **RxJS** - Reactive programming
 - **HTML/CSS** - UI markup and styling
 
-## ?? Prerequisites
+## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
 - [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
@@ -48,7 +48,7 @@ Before you begin, ensure you have the following installed:
 - [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) or SQL Server Express
 
-## ?? Installation & Setup
+## 🔧 Installation & Setup
 
 ### Backend Setup
 
@@ -121,45 +121,45 @@ Before you begin, ensure you have the following installed:
    ng build --configuration production
    ```
 
-## ?? Project Structure
+## 📁 Project Structure
 
 ```
 Inventory & Asset Management System/
-??? Inventory & Asset Management System/
-?   ??? Controllers/
-?   ?   ??? InventoryController.cs    # Inventory CRUD operations
-?   ?   ??? StockController.cs        # Stock management operations
-?   ??? Models/
-?   ?   ??? InventoryItem.cs          # Inventory item entity
-?   ?   ??? StockTransaction.cs       # Transaction entity
-?   ??? Data/
-?   ?   ??? ApplicationDbContext.cs   # EF Core DbContext
-?   ??? Program.cs                    # Application entry point
-?   ??? appsettings.json              # Configuration settings
-?   ??? Inventory & Asset Management System.csproj
-??? inventory-frontend/
-?   ??? src/
-?   ?   ??? app/
-?   ?   ?   ??? components/
-?   ?   ?   ?   ??? inventory-list/
-?   ?   ?   ?   ??? inventory-form/
-?   ?   ?   ?   ??? stock-management/
-?   ?   ?   ??? models/
-?   ?   ?   ?   ??? inventory-item.model.ts
-?   ?   ?   ?   ??? stock-transaction.model.ts
-?   ?   ?   ??? services/
-?   ?   ?   ?   ??? inventory.service.ts
-?   ?   ?   ?   ??? stock.service.ts
-?   ?   ?   ??? app.component.ts
-?   ?   ?   ??? app.config.ts
-?   ?   ?   ??? app.routes.ts
-?   ?   ??? index.html
-?   ??? angular.json
-?   ??? package.json
-??? README.md
+├── Inventory & Asset Management System/
+│   ├── Controllers/
+│   │   ├── InventoryController.cs    # Inventory CRUD operations
+│   │   └── StockController.cs        # Stock management operations
+│   ├── Models/
+│   │   ├── InventoryItem.cs          # Inventory item entity
+│   │   └── StockTransaction.cs       # Transaction entity
+│   ├── Data/
+│   │   └── ApplicationDbContext.cs   # EF Core DbContext
+│   ├── Program.cs                    # Application entry point
+│   ├── appsettings.json              # Configuration settings
+│   └── Inventory & Asset Management System.csproj
+├── inventory-frontend/
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── components/
+│   │   │   │   ├── inventory-list/
+│   │   │   │   ├── inventory-form/
+│   │   │   │   └── stock-management/
+│   │   │   ├── models/
+│   │   │   │   ├── inventory-item.model.ts
+│   │   │   │   └── stock-transaction.model.ts
+│   │   │   ├── services/
+│   │   │   │   ├── inventory.service.ts
+│   │   │   │   └── stock.service.ts
+│   │   │   ├── app.component.ts
+│   │   │   ├── app.config.ts
+│   │   │   └── app.routes.ts
+│   │   └── index.html
+│   ├── angular.json
+│   └── package.json
+└── README.md
 ```
 
-## ?? API Endpoints
+## 🔌 API Endpoints
 
 ### Inventory Endpoints
 
@@ -180,7 +180,7 @@ Inventory & Asset Management System/
 | POST | `/api/Stock/stock-out/{itemId}` | Remove stock from item |
 | GET | `/api/Stock/transactions/{itemId}` | Get transaction history |
 
-## ?? Database Schema
+## 📊 Database Schema
 
 ### InventoryItems Table
 - `Id` (int, PK)
@@ -199,7 +199,7 @@ Inventory & Asset Management System/
 - `TransactionDate` (datetime, default UTC now)
 - `Notes` (string, nullable)
 
-## ?? Usage
+## 🎯 Usage
 
 1. **Adding New Items**
    - Navigate to the Inventory page
@@ -222,7 +222,7 @@ Inventory & Asset Management System/
    - View all stock-in and stock-out operations
    - Filter by date or transaction type
 
-## ?? CORS Configuration
+## 🔒 CORS Configuration
 
 The backend is configured to accept requests from `http://localhost:4200` during development. To modify CORS settings for production, update the `Program.cs` file:
 
@@ -238,7 +238,7 @@ builder.Services.AddCors(options =>
 });
 ```
 
-## ?? Testing
+## Testing
 
 ### Backend Testing
 ```bash
@@ -252,7 +252,8 @@ cd inventory-frontend
 npm test
 ```
 
-## ?? Deployment
+## 🚀 Deployment
+>>>>>>> 36b989e1dfea5d1f100e669f2d41c83e81480ab6
 
 ### Backend Deployment
 1. Publish the application:
@@ -288,17 +289,15 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## ?? Authors
-
-- Your Name - Initial work
-
-## ?? Acknowledgments
+## 👥 Authors
+Ansh Pal
+## 🙏 Acknowledgments
 
 - Built with .NET 10 and Angular
 - Database powered by SQL Server
 - API documentation with Scalar
 
-## ?? Contact
+## 📧 Contact
 
 Project Link: [https://github.com/yourusername/inventory-asset-management](https://github.com/yourusername/inventory-asset-management)
 
