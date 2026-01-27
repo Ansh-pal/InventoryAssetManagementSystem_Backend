@@ -47,6 +47,11 @@ namespace InventoryAssetManagementSystem.Api.Controllers
             await _context.SaveChangesAsync();
 
             var createdItem = await _context.InventoryItems.FindAsync(item.Id);
+            if (createdItem == null)
+            {
+                return StatusCode(500, "Failed to create inventory item");
+            }
+            
             return CreatedAtAction(nameof(GetInventoryItem), new { id = createdItem.Id }, createdItem);
         }
 

@@ -36,6 +36,22 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
+// Map root endpoint to show API info
+app.MapGet("/", () => Results.Json(new
+{
+    name = "Inventory & Asset Management System API",
+    version = "1.0",
+    status = "Running",
+    documentation = "/scalar/v1",
+    endpoints = new
+    {
+        inventory = "/api/Inventory",
+        lowStock = "/api/Inventory/low-stock",
+        stock = "/api/Stock"
+    },
+    description = "Backend API for Inventory and Asset Management System"
+})).ExcludeFromDescription();
+
 app.UseCors("AllowAngularApp");
 app.UseHttpsRedirection();
 app.UseAuthorization();
